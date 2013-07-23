@@ -2,8 +2,8 @@
     <Kind>42</Kind>
     <Name>SystemSettings</Name>
     <IsMinified>0</IsMinified>
-    <XPosition>1.000000000</XPosition>
-    <YPosition>82.000000000</YPosition>
+    <XPosition>997.000000000</XPosition>
+    <YPosition>161.000000000</YPosition>
 </Canvas>
 <Widget>
     <Kind>2</Kind>
@@ -23,12 +23,12 @@
 <Widget>
     <Kind>2</Kind>
     <Name>BiDirectionalSort</Name>
-    <Value>0</Value>
+    <Value>1</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
     <Name>Random_Sort</Name>
-    <Value>0.000000000</Value>
+    <Value>596.059082031</Value>
 </Widget>
 <Widget>
     <Kind>2</Kind>
@@ -38,7 +38,7 @@
 <Widget>
     <Kind>4</Kind>
     <Name>Random_Mix</Name>
-    <Value>16.748767853</Value>
+    <Value>0.000000000</Value>
 </Widget>
 <Widget>
     <Kind>4</Kind>
