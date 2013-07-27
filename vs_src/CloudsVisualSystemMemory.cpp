@@ -100,7 +100,7 @@ void CloudsVisualSystemMemory::generate(){
         //  Image
         //
         ofImage img;
-        img.loadImage("img.jpg");
+        img.loadImage("images/img.jpg");
         generateFromTexture( img.getTextureReference() );
         
         //  FBO
@@ -327,14 +327,14 @@ void CloudsVisualSystemMemory::applyRandomUp(){
     int A = ofRandom(xBlocks,blocks.size()-1);
     int B = A - xBlocks;
     
-    swapBlocks(A,B);
+    swapBlocks(A,B, false);
 }
 
 void CloudsVisualSystemMemory::applyRandomDown(){
     int A = ofRandom(0,blocks.size()-1-xBlocks);
     int B = A + xBlocks;
     
-    swapBlocks(A,B);
+    swapBlocks(A,B, false);
 }
 
 void CloudsVisualSystemMemory::applyDeFrag()
@@ -384,11 +384,11 @@ void CloudsVisualSystemMemory::applyDeFrag()
     }
 }
 
-void CloudsVisualSystemMemory::swapBlocks(int _indexA, int _indexB){
+void CloudsVisualSystemMemory::swapBlocks(int _indexA, int _indexB, bool _colored){
     swap(blocks[_indexA].value, blocks[_indexB].value);
     swap(blocks[_indexA].color, blocks[_indexB].color);
-    blocks[_indexA].bSelected = true;
-    blocks[_indexB].bSelected = true;
+    blocks[_indexA].bSelected = _colored;
+    blocks[_indexB].bSelected = _colored;
 }
 
 void CloudsVisualSystemMemory::selfDrawBackground()

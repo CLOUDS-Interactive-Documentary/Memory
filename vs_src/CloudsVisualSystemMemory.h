@@ -86,7 +86,7 @@ private:
     void    generateFromTexture(ofTexture &_tex);
     
     void    unSelectAll();
-    void    swapBlocks(int _indexA, int _indexB);
+    void    swapBlocks(int _indexA, int _indexB, bool _colored = true);
     
     void    applySort();
     void    applyDeFrag();
