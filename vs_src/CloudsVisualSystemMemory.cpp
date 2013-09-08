@@ -100,7 +100,7 @@ void CloudsVisualSystemMemory::generate(){
         //  Image
         //
         ofImage img;
-        img.loadImage("images/img.jpg");
+        img.loadImage( getVisualSystemDataPath() + "images/img.jpg");
         generateFromTexture( img.getTextureReference() );
         
         //  FBO
